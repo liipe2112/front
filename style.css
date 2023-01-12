@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.wave {
+    margin-top: 10%;
+    text-align: center;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,0.2));
+    font-size: 60px;
+}
+
+.wave span{
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: wave 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes wave{
+    0%,40%,100%{
+        transform: translateY(0);
+    }20%{
+        transform: translateY(-20px);
+    }
+}
